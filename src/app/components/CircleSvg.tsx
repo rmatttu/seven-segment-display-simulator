@@ -1,13 +1,13 @@
 'use client'
 
-import React, { FC, useState, MouseEventHandler } from 'react';
+import React, { FC, useState } from 'react';
 
 interface CircleProps {
   color1: string;
   color2: string;
 }
 
-const circleSvg: FC<CircleProps> = ({ color1, color2 }) => {
+const CircleSvg: FC<CircleProps> = ({ color1, color2 }) => {
   const [clickCount, setClickCount] = useState(0);
   const currentColor = clickCount % 2 === 0 ? color1 : color2
 
@@ -26,4 +26,4 @@ const circleSvg: FC<CircleProps> = ({ color1, color2 }) => {
   </svg>
 };
 
-export default circleSvg
+export default CircleSvg
