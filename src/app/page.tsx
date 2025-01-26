@@ -12,6 +12,10 @@ export default function Home() {
           color1="red"
           color2="blue"
         />
+        <SevenSegmentLed
+          enableColor="#F00"
+          disableColor="#000"
+        />
         <SevenSegmentLedSample></SevenSegmentLedSample>
         <SampleButton></SampleButton>
         <Image
